@@ -199,16 +199,19 @@ window.addEventListener('load', () => {
 // popup
 
 const buttonContact = document.querySelector('.header__button-contact');
-
 const popupOverlay = document.getElementById("popup-overlay");
 const popup = document.getElementById("popup");
 
 function showPopup() {
-  popupOverlay.style.display = "block";
-  popup.style.display = "block";
+  popupOverlay.classList.add('active');
+  popup.classList.add('active');
 }
 
 function closePopup() {
-  popupOverlay.style.display = "none";
-  popup.style.display = "none";
+  popupOverlay.classList.remove('active');
+  popup.classList.remove('active');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(showPopup, 7000);
+});
