@@ -133,7 +133,7 @@ const insightsSlider = new Swiper('#insights-slider', {
     breakpoints: {
         
         1000: {
-          slidesPerView: 3,
+          slidesPerView: 3.8,
           spaceBetween: 13
         },
     },  
