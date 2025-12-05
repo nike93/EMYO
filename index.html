@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/Unbouded/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/Rubik/stylesheet.css">
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
     <link rel="icon" href="./assets/icons/favicon.png">
@@ -27,11 +29,11 @@
     <nav class="menu">
         <img class="burger-logo" src="./assets/icons/logo.svg" alt="logo">
         <ul class="burger__list">
-            <li><a href="./index.html">TOKENOMICS</a></li>
-            <li><a href="">UTILITY</a></li>
-            <li><a href="">ROADMAP</a></li>
+            <li><a href="#tokenomics">TOKENOMICS</a></li>
+            <li><a href="#utility">UTILITY</a></li>
+            <li><a href="#roadmap">ROADMAP</a></li>
             <li><a href="">BLOG</a></li>
-            <li><a href="">TEAM</a></li>
+            <li><a href="#team">TEAM</a></li>
             <li><a href="">DOCS</a></li>
             <li><a href="">CONTACT</a></li>
         </ul>
@@ -42,10 +44,10 @@
 
         <div class="footer__social">
             <ul class="social__links">
-                <li><a href=""><img src="./assets/icons/telegram.svg" alt=""></a></li>
-                <li><a href=""><img src="./assets/icons/x.svg" alt=""></a></li>
-                <li><a href=""><img src="./assets/icons/discord.svg" alt=""></a></li>
-                <li><a href=""><img src="./assets/icons/social4.svg" alt=""></a></li>
+                <li><a href="https://t.me/emyocoin"><img src="./assets/icons/telegram.svg" alt=""></a></li>
+                <li><a href="https://x.com/Emyocoin"><img src="./assets/icons/x.svg" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/company/emyocoin/about/?viewAsMember=true"><img src="./assets/icons/in.svg" alt=""></a></li>
+                <li><a href="https://medium.com/@emyocoin"><img src="./assets/icons/social4.svg" alt=""></a></li>
             </ul>           
                 
         </div>
@@ -61,16 +63,22 @@
             <img src="./assets/icons/logo.svg" alt="">
         </a>
         <ul class="nav-menu">
-            <li><a href="./index.html">TOKENOMICS</a></li>
-            <li><a href="">UTILITY</a></li>
-            <li><a href="">ROADMAP</a></li>
+            <li><a href="#tokenomics">TOKENOMICS</a></li>
+            <li><a href="#utility">UTILITY</a></li>
+            <li><a href="#roadmap">ROADMAP</a></li>
             <li><a href="">BLOG</a></li>
-            <li><a href="">TEAM</a></li>
+            <li><a href="#team">TEAM</a></li>
             <li><a href="">DOCS</a></li>
             <li><a href="">CONTACT</a></li>
         </ul>
-        <div class="header-button-sale" onclick="showPopup()">Participate in Token Sale</div>
-        <div class="header-button-contact" onclick="showPopup()">Contact us <img src="./assets/icons/white-arrow-svg.svg" alt=""></div>
+        <ul class="header-social__links">
+            <li><a href="https://t.me/emyocoin"><img src="./assets/icons/telegram.svg" alt=""></a></li>
+            <li><a href="https://x.com/Emyocoin"><img src="./assets/icons/x.svg" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/company/emyocoin/about/?viewAsMember=true"><img src="./assets/icons/in.svg" alt=""></a></li>
+            <li><a href="https://medium.com/@emyocoin"><img src="./assets/icons/social4.svg" alt=""></a></li>
+        </ul>
+        <div class="header-button-sale" onclick="showPopup()">PARTICIPATE IN TOKEN SALE</div>
+        <!-- <div class="header-button-contact" onclick="showPopup()">Contact us <img src="./assets/icons/white-arrow-svg.svg" alt=""></div> -->
         <div class="burger-menu mobile">
             <div class="burger-btn">
                 <span class="burger-line"></span>
@@ -91,11 +99,11 @@
                 <div class="header__content">
 
                     <div class="header__block-text">
-                        <h1>A profitable casino chain with 160,000+ players is bridging gambling with advanced Web3 and DeFi infrastructure</h1>
-                        <p class="header__block-descr">With the entire raise allocated to liquidity and loyalty pools, EMYO becomes a high-utility token at the heart of a powerful and fast-growing global gambling chain</p>
+                        <h1>A profitable casino chain <span class="br-pc"></span> with 160,000+ players is bridging gambling with advanced Web3 and DeFi infrastructure</h1>
+                        <p class="header__block-descr">With the entire raise allocated to liquidity and loyalty pools, EMYO becomes <span class="br-pc"></span> a high-utility token at the heart of a powerful and fast-growing global gambling market</p>
                         <div class="header__buttons-wrap">
-                            <div class="button-sale" onclick="showPopup()">Participate in Token Sale</div>
-                            <div class="button-read">Read Whitepaper</div>
+                            <div class="button-sale" onclick="showPopup()">PARTICIPATE IN TOKEN SALE</div>
+                            <div class="button-read">READ WHITEPAPER</div>
 
                         </div>
                     </div>
@@ -103,10 +111,10 @@
                     <div class="header__block-timer">
                         <div class="block__timer-top-row">
                             <!-- <p class="top-row-label">Round 3 Live</p> -->
-                            <p class="top-row-text">EMYO <span>$0.020</span></p>
+                            <p class="top-row-text">EMYO <span>$0.02</span></p>
                         </div>
 
-                        <p class="timer-end-text">Round 1 Starts in</p>
+                        <p class="timer-end-text">ROUND 1 STARTS IN</p>
 
                         <div class="timer__blocks-row">
 
@@ -134,8 +142,8 @@
 
                         <div class="timer__block-progress">
                             <div class="block__progress-text-wrap">
-                                <span class="progress-text">0% SOLD</span>
-                                <span class="progress-text">100.0% REMAINING</span>
+                                <span class="progress-text">0<span>%</span> <span>SOLD</span></span>
+                                <span class="progress-text">100% REMAINING</span>
                             </div>
 
                             <div class="block__progress-line">
@@ -146,22 +154,22 @@
                         <div class="timer__block-numbers">
 
                             <div class="number__block">
-                                <span class="number__block-name">Raised</span>
-                                <span class="number__block-value">0.0M</span>
+                                <span class="number__block-name">RAISED</span>
+                                <span class="number__block-value">0.0<span>M</span></span>
                             </div>
 
                             <span class="block-numbers-line"></span>
 
                             <div class="number__block">
-                                <span class="number__block-name">Target</span>
-                                <span class="number__block-value">9.5M</span>
+                                <span class="number__block-name">TARGET</span>
+                                <span class="number__block-value">9.5<span>M</span></span>
                             </div>
 
                         </div>
 
-                        <p class="timer__block-next-round-text">Next Round Price $0.030</p>
+                        <p class="timer__block-next-round-text">Next Round Price $0.035</p>
 
-                        <div class="timer__block-button" onclick="showPopup()">Connect Wallet</div>
+                        <div class="timer__block-button" onclick="showPopup()">CONNECT WALLET</div>
 
                     </div>
 
@@ -173,42 +181,43 @@
 
 
         <div class="container">
-            <div class="token-inner">
+            <div class="token-inner" id="utility">
+                <img class="token-light" src="./assets/light-orange.png" alt="">
                 <div class="token-back"></div>
-                <h2 class="token__header fade-in">Token Sale Overview</h2>
-                <p class="token__header-descr fade-in pc">EMYO is the utility coin used within the existing and effectively operating casino platform for loyalty programs, NFT tiers and access to DeFi and Web3 products</p>
-                <p class="token__header-descr fade-in mobile">EMYO is the utility coin used within the existing and effectively operating casino platform for loyalty programs, NFT tiers and access to DeFi and Web3 products</p>
+                <h2 class="token__header fade-in">TOKEN SALE OVERVIEW</h2>
+                <p class="token__header-descr fade-in pc">EMYO is the utility coin used in the existing and effectively operating casino platform for loyalty programs and access to DeFi and Web3 products</p>
+                <p class="token__header-descr fade-in mobile">EMYO is the utility coin used in the existing and effectively operating casino platform for loyalty programs and access to DeFi and Web3 products</p>
                 
                 <div class="token__content">
 
                     <div class="token__content-details">
                         <div class="token__details-top fade-in">
-                            <div class="token__details-top-text">Coin Details</div>
-                            <img src="./assets/icons/logo.svg" alt="">
+                            <div class="token__details-top-text">TOKEN DETAILS</div>
+                            <img src="./assets/icons/dice.svg" alt="">
                         </div>
 
                         <div class="token__table">
 
                             
                             <div class="token__table-row fade-in">
-                                <p class="token-name">Coin Name</p>
+                                <p class="token-name">TOKEN NAME</p>
                                 <div class="token-value">EMYO</div>
                             </div>
                             <div class="token__table-row fade-in">
-                                <p class="token-name">Symbol</p>
+                                <p class="token-name">SYMBOL</p>
                                 <div class="token-value">EMYO</div>
                             </div>
                             <div class="token__table-row fade-in">
-                                <p class="token-name">Chain</p>
+                                <p class="token-name">CHAIN</p>
                                 <div class="token-value">BSC</div>
                             </div>
                             <div class="token__table-row fade-in">
-                                <p class="token-name">Total Supply</p>
+                                <p class="token-name">TOTAL SUPPLY</p>
                                 <div class="token-value">1,000,000,000</div>
                             </div>
                             <div class="token__table-row fade-in">
-                                <p class="token-name">Token Sale Allocation</p>
-                                <div class="token-value">38.29%</div>
+                                <p class="token-name">TOKEN SALE ALLOCATION</p>
+                                <div class="token-value">38%</div>
                             </div>
                             <div class="token__table-row fade-in">
                                 <p class="token-name">TGE</p>
@@ -217,30 +226,30 @@
 
                         </div>
 
-                        <div class="button-sale fade-in" onclick="showPopup()">Participate in Token Sale</div>
+                        <div class="button-sale fade-in" onclick="showPopup()">PARTICIPATE IN TOKEN SALE</div>
                     </div>
 
                     <div class="token__content-join">
-                        <img src="./assets/token-back.webp" alt="" class="join-back">
+                        <!-- <img src="./assets/token-back.webp" alt="" class="join-back"> -->
 
-                        <div class="token__details-top-text fade-in">How to join</div>
+                        <div class="token__details-top-text fade-in">HOW TO JOIN</div>
 
                         <div class="join-bloks-wrap">
                             <div class="join__block fade-in">
-                                <div class="join__block-number">/01</div>
-                                <p class="join__block-name">Register</p>
+                                <div class="join__block-number">1</div>
+                                <p class="join__block-name">REGISTER</p>
                                 <p class="join__block-text">Connect your Web3 wallet to instantly access the token sale dashboard</p>
                             </div>
 
                             <div class="join__block fade-in">
-                                <div class="join__block-number">/02</div>
-                                <p class="join__block-name">Verify Identity (if required)</p>
-                                <p class="join__block-text">Some rounds may require basic KYC verification to comply with regional regulations. Verification is quick, secure</p>
+                                <div class="join__block-number">2</div>
+                                <p class="join__block-name">VERIFY IDENTITY (IF REQUIRED)</p>
+                                <p class="join__block-text">Some rounds may require basic KYC verification to comply with regional regulations. <span class="br-pc"></span> Verification is quick and secure</p>
                             </div>
 
                             <div class="join__block fade-in">
-                                <div class="join__block-number">/03</div>
-                                <p class="join__block-name">Buy EMYO</p>
+                                <div class="join__block-number">3</div>
+                                <p class="join__block-name">BUY EMYO</p>
                                 <p class="join__block-text">Complete the transaction directly through your wallet</p>
                             </div>
                         </div>
@@ -251,7 +260,7 @@
                     <div class="emyo-row fade-in">
                         <p class="emyo-header">EMYO coins are distributed across three <span>transparent participation rounds</span></p>
                         <p class="emyo-descr">The sale structure ensures long-term sustainability, with gradual vesting and on-chain verification of all allocations</p>
-                        <img src="./assets/icons/logo.svg" alt="">
+                        <img src="./assets/icons/dice.svg" alt="">
                     </div>
 
                     <div class="emyo-row-down">
@@ -296,7 +305,7 @@
                 
                 <div class="tokenomics-header-wrap">
                     <h2 class="tokenomics-header fade-in">Tokenomics & Coin Utility</h2>
-                    <p class="tokenomics-header-text fade-in">Discover how EMYO powers real growth across gambling, staking, and Web3 entertainment - backed by a licensed casino ecosystem</p>
+                    <p class="tokenomics-header-text fade-in">Discover how EMYO powers real growth across gambling,<span class="br-pc"></span> staking, and Web3 entertainment - backed by a licensed casino ecosystem</p>
                 </div>
 
                 <div class="tokenomics-bloks-wrap">
@@ -306,7 +315,7 @@
                             <img src="./assets/icons/tokenomics1.svg" alt="">
                         </div>
                         <p class="tokenomics__block-name">DeFi Staking Access</p>
-                        <p class="tokenomics__block-text">Stake EMYO to unlock on-chain features - loyalty rewards, NFT tiers, and access to Web3 products within the licensed Casino 3.0 ecosystem</p>
+                        <p class="tokenomics__block-text">Stake EMYO to unlock on-chain features - loyalty rewards NFT tiers and access to Web3 products within the licensed Casino 3.0 ecosystem</p>
                     </div>
 
                     <div class="tokenomics__block fade-in">
@@ -314,7 +323,7 @@
                             <img src="./assets/icons/tokenomics2.svg" alt="">
                         </div>
                         <p class="tokenomics__block-name">Real-Business Backing</p>
-                        <p class="tokenomics__block-text">EMYO is powered by IB Group’s licensed casino network with a proven $60 M+ annual GGR, 160 K active players, and 20 years of operational excellence</p>
+                        <p class="tokenomics__block-text">EMYO is powered by IB Group’s licensed casino network with a proven $600M+ annual turnover, 160K active players and 20 years of operational excellence</p>
                     </div>
 
                     <div class="tokenomics__block fade-in">
@@ -322,7 +331,7 @@
                             <img src="./assets/icons/tokenomics3.svg" alt="">
                         </div>
                         <p class="tokenomics__block-name">Real-World Integration</p>
-                        <p class="tokenomics__block-text">Bridging licensed casinos with Web3 - instant payments, transparency, and loyalty-based utility</p>
+                        <p class="tokenomics__block-text">Bridging licensed casinos with Web3 - instant payments, transparency and loyalty-based utility</p>
                     </div>
 
                     <div class="tokenomics__block fade-in">
@@ -330,7 +339,7 @@
                             <img src="./assets/icons/tokenomics4.svg" alt="">
                         </div>
                         <p class="tokenomics__block-name">Community Participation</p>
-                        <p class="tokenomics__block-text">Join community votes on new features, events, and ecosystem initiative</p>
+                        <p class="tokenomics__block-text">Join community votes on new features, events and ecosystem initiative</p>
                     </div>
 
                 </div>
@@ -339,15 +348,20 @@
 
 
         <div class="container">
-            <div class="diagram-inner">
+            <div class="diagram-outwrap" id="tokenomics">
+                <img class="diagram-light-top" src="./assets/tokenomics-light.png" alt="">
+                <img class="diagram-light-bottom" src="./assets/tokenomics-light.png" alt="">
+
+
+                <div class="diagram-inner">
                 <div class="diagram-ellipse-back"></div>
                 <img class="diagram-back" src="./assets/diagram-back.webp" alt="">
                 <div class="diagram-wrap">
 
                     <div class="diagram-top fade-in">
-                        <h2 class="diagram-header">Tokenomics</h2>
-                        <p class="diagram-descr">Discover how EMYO powers real growth across gambling, staking, and Web3 entertainment</p>
-                        <img src="./assets/icons/logo.svg" alt="" class="diagram-logo">
+                        <h2 class="diagram-header">TOKENOMICS</h2>
+                        <p class="diagram-descr">Discover how EMYO powers real growth across gambling, staking and Web3 entertainment</p>
+                        <img src="./assets/icons/dice.svg" alt="" class="diagram-logo">
                     </div>
 
                     <div class="diagram-image-wrap">
@@ -414,45 +428,49 @@
 
                             </div>
 
-                            <div class="legend-button fade-in" onclick="showPopup()">View Full Tokenomics</div>
+                            <div class="legend-button fade-in" onclick="showPopup()">VIEW FULL TOKENOMICS</div>
 
+                            </div>
                         </div>
+
                     </div>
 
+                    <div class="diagram-content">
+
+                        <div class="diagram-content-block fade-in">
+                            <div class="diagram__block-icon">
+                                <img src="./assets/icons/diagram1.svg" alt="">
+                            </div>
+                            <p class="diagram__block-text">Global Licensed <span class="br-pc"></span> Casino Infrastructure</p>
+                        </div>
+
+                        <div class="diagram-content-block fade-in">
+                            <div class="diagram__block-icon">
+                                <img src="./assets/icons/diagram2.svg" alt="">
+                            </div>
+                            <p class="diagram__block-text">Expanding Web3 <span class="br-pc"></span>Ecosystem</p>
+                        </div>
+
+                        <div class="diagram-content-block fade-in">
+                            <div class="diagram__block-icon">
+                                <img src="./assets/icons/diagram3.svg" alt="">
+                            </div>
+                            <p class="diagram__block-text">Strategic <span class="br-pc"></span> Exchange Pipeline</p>
+                        </div>
+
+                        <div class="diagram-content-block fade-in">
+                            <div class="diagram__block-icon">
+                                <img src="./assets/icons/diagram4.svg" alt="">
+                            </div>
+                            <p class="diagram__block-text">Institutional-Grade <span class="br-pc"></span> Security & Transparency</p>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="diagram-content">
 
-                    <div class="diagram-content-block fade-in">
-                        <div class="diagram__block-icon">
-                            <img src="./assets/icons/diagram1.svg" alt="">
-                        </div>
-                        <p class="diagram__block-text">Global Licensed Casino Infrastructure</p>
-                    </div>
-
-                    <div class="diagram-content-block fade-in">
-                        <div class="diagram__block-icon">
-                            <img src="./assets/icons/diagram2.svg" alt="">
-                        </div>
-                        <p class="diagram__block-text">Expanding Web3 Ecosystem</p>
-                    </div>
-
-                    <div class="diagram-content-block fade-in">
-                        <div class="diagram__block-icon">
-                            <img src="./assets/icons/diagram3.svg" alt="">
-                        </div>
-                        <p class="diagram__block-text">Strategic Exchange Pipeline</p>
-                    </div>
-
-                    <div class="diagram-content-block fade-in">
-                        <div class="diagram__block-icon">
-                            <img src="./assets/icons/diagram4.svg" alt="">
-                        </div>
-                        <p class="diagram__block-text">Institutional-Grade Security & Transparency</p>
-                    </div>
-
-                </div>
             </div>
+            
         </div>
 
 
@@ -507,7 +525,7 @@
                     <span class="roulette__block-line"></span>
 
                     <div class="roulette__block">
-                        <p class="roulette__block-number">$150M+</p>
+                        <p class="roulette__block-number">$1.5B+</p>
                         <p class="roulette__block-text">target cap</p>
                     </div>
 
@@ -519,6 +537,7 @@
 
         <div class="container">
             <div class="future-inner">
+                <img class="future-light" src="./assets/future-light.png" alt="">
 
                 <div class="future__header-wrap">
                     <h2 class="future__header-head fade-in">Building the Future</h2>
@@ -558,13 +577,13 @@
 
                     <div class="future__content-row fade-in">
                         <p class="future__content-name">Monthly Loyalty Pool Distribution</p>
-                        <p class="future__content-descr">Each month, a dedicated on-chain Loyalty Pool is formed from ecosystem efficiency gains and distributed among active stakers and participants — fully transparent, rule-based, and verifiable on-chain</p>
+                        <p class="future__content-descr">Each month a dedicated on-chain Loyalty Pool is formed from ecosystem efficiency gains and distributed among active stakers and participants — fully transparent, rule-based and verifiable on-chain</p>
                         <p class="future__content-numb">/02</p>
                     </div>
 
                     <div class="future__content-row fade-in">
                         <p class="future__content-name">Transparent & Responsible Ecosystem</p>
-                        <p class="future__content-descr">EMYO promotes secure, compliant, and transparent participation across Web3 — with clear rules, KYC controls, and fair mechanisms protecting every user in the ecosystem</p>
+                        <p class="future__content-descr">EMYO promotes secure, compliant, and transparent participation across Web3 — with clear rules, KYC controls and fair mechanisms protecting every user in the ecosystem</p>
                         <p class="future__content-numb">/03</p>
                     </div>
 
@@ -574,46 +593,49 @@
         </div> 
 
         <div class="container">
-            <div class="roadmap-inner">
+            <div class="roadmap-inner" id="roadmap">
                 <div class="roadmap-image-back">
                     <div class="diagram-ellipse-back"></div>
                     <img src="./assets/diagram-back.webp" alt="" class="roadmap-image-back-item">
                     <div class="roadmap-wrap">
                     <div class="roadmap__top-row fade-in">
-                        <h2 class="roadmap__header">Road <span>map</span></h2>
+                        <h2 class="roadmap__header">Road<span>map</span></h2>
                         <div class="roadmap__header-button" onclick="showPopup()">
-                            <p>See further steps</p>
-                            <img src="./assets/icons/gold-arrow.svg" alt="">
+                            <p>SEE NEXT STEPS <span>></span></p>
+                            <!-- <img src="./assets/icons/gold-arrow.svg" alt=""> -->
                         </div>
                     </div>
 
                     <div class="grid-container">
                         <div class="grid-item fade-in">
                             <div class="grid-icon"><img src="./assets/icons/rocket.svg" alt=""></div>
-                            <div class="grid-line"><div class="grid-line-fill"></div></div>
+                            <p class="grid-item-name">September–November 2025<span class="br-pc"> Preparation Phase</span></p>
+                            
                         </div>
                         <div class="grid-item fade-in">
                             <div class="grid-icon"><img src="./assets/icons/people.svg" alt=""></div>
-                            <div class="grid-line"></div>
+                            <p class="grid-item-name">December 2025 – January 2026 <span class="br-pc"> Community & Awareness Growth</span></p>
+                            
                         </div>
                         <div class="grid-item fade-in">
                             <div class="grid-icon"><img src="./assets/icons/money.svg" alt=""></div>
+                            <p class="grid-item-name">January – February 2026 <span class="br-pc"> Seed Round Phase</span></p>
+                            
+                        </div>
+
+                        <div class="grid-item fade-in"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item fade-in">
+                            <div class="grid-line"><div class="grid-line-fill"></div></div>
+                        </div>
+                        <div class="grid-item fade-in">
+                            <div class="grid-line"><div class="grid-line-fill"></div></div>
+                        </div>
+                        <div class="grid-item fade-in">
                             <div class="grid-line"></div>
                             <div class="grid-short-line"></div>
                             <div class="grid-short-line"></div>
-                        </div>
-
-                        <div class="grid-item fade-in"><div class="grid-vertical-line"></div></div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item fade-in">
-                            <p class="grid-item-name">September–November 2025<span> Preparation Phase</span></p>
-                        </div>
-                        <div class="grid-item fade-in">
-                            <p class="grid-item-name">December 2025 – January 2026 <span> Community & Awareness Growth</span></p>
-                        </div>
-                        <div class="grid-item fade-in">
-                            <p class="grid-item-name">January – February 2026 <span> Seed Round Phase</span></p>
                         </div>
 
                         <div class="grid-item fade-in"><div class="grid-vertical-line"></div></div>
@@ -633,16 +655,17 @@
                             <div class="grid__content-cell fade-in">
                                 <div class="grid__content-left">
                                     <div class="grid-tick"><img src="./assets/icons/tick.svg" alt=""></div>
-                                    <div class="grid-tick-line"></div>
+                                    <div class="grid-tick-line grid-tick-line-mobile"></div>
                                 </div>
                                 <p class="grid__content-text">Legal groundwork </p>
                             </div>
 
                             <div class="grid__content-cell fade-in">
-                                <div class="grid__content-left">
-                                    <div class="grid-tick grid-tick-white"></div>
+                                 <div class="grid__content-left">
+                                    <div class="grid-tick"><img src="./assets/icons/tick.svg" alt=""></div>
+                                    <!-- <div class="grid-tick-line grid-tick-line-mobile"></div> -->
                                 </div>
-                                <p class="grid__content-text grid__content-text-grey">Initial development of marketing programs and tokensale strategy</p>
+                                <p class="grid__content-text">Initial development of marketing programs and tokensale strategy</p>
                             </div>
 
                         </div>
@@ -651,10 +674,10 @@
 
                             <div class="grid__content-cell fade-in">
                                 <div class="grid__content-left">
-                                    <div class="grid-tick grid-tick-white"></div>
-                                    <div class="grid-tick-line"></div>
+                                    <div class="grid-tick"><img src="./assets/icons/tick.svg" alt=""></div>
+                                    <div class="grid-tick-line grid-tick-line-mobile"></div>
                                 </div>
-                                <p class="grid__content-text grid__content-text-grey">Official launch of Emyo’s social channels kickoff (Telegram, X, Facebook)</p>
+                                <p class="grid__content-text">Official launch of Emyo’s social channels kickoff (Telegram, X, Facebook)</p>
                             </div>
 
                             <div class="grid__content-cell fade-in">
@@ -689,7 +712,7 @@
                                     <div class="grid-tick grid-tick-white"></div>
                                     <div class="grid-tick-line"></div>
                                 </div>
-                                <p class="grid__content-text grid__content-text-grey">Seed Round and Public Round execution</p>
+                                <p class="grid__content-text grid__content-text-grey">Seed Round and Public Round</p>
                             </div>
 
                             <div class="grid__content-cell fade-in">
@@ -742,14 +765,15 @@
                     <div class="partner__head fade-in">
                         <h2 class="partner__head-header">As <span>Featured In</span></h2>
                         <div class="partner-button" onclick="showPopup()">
-                            <p>View All Press Mentions</p>
-                            <img src="./assets/icons/gold-arrow.svg" alt="">
+                            <p>SEE ALL MEDIA COVERAGE <span>> </span></p>
+                            <!-- <img src="./assets/icons/gold-arrow.svg" alt=""> -->
                         </div>
                     </div>
 
 
-                    <div class="partners-container fade-in" id="partner-slider">
+                    <div class="partners-container" id="partner-slider">
                         <div class="partners-desktop">
+                            <img class="partner-light-top" src="./assets/partner-light.png" alt="">
                             <div class="partner-item">
                                 <img src="./assets/icons/review1.svg" alt="">
                             </div>
@@ -760,37 +784,69 @@
                                 <img src="./assets/icons/review3.png" alt="">
                             </div>
                             <div class="partner-item">
+                                <img src="./assets/icons/review5.svg" alt="">
+                            </div>
+                            <div class="partner-item">
                                 <img src="./assets/icons/review4.png" alt="">
                             </div>
                         </div>
 
                         <div class="partners-mobile-carousel">
-                            <div class="carousel-track">
-                                <div class="carousel-item">
-                                    <img src="./assets/icons/review1.svg" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/icons/review2.png" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/icons/review3.png" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/icons/review4.svg" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/icons/review1.svg" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/icons/review2.png" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/icons/review3.png" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/icons/review4.svg" alt="">
+                            <img class="partner-light-top" src="./assets/partner-light.png" alt="">
+                            <div class="carousel-track-wrap">
+                                <div class="carousel-track">
+
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review2.png" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review1.png" alt="">                                    
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review3.png" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review5.svg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review4.svg" alt="">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review2.png" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review1.png" alt="">                                    
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review3.png" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review5.svg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review4.svg" alt="">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review2.png" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review1.png" alt="">                                    
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review3.png" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review5.svg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/icons/review4.svg" alt="">
+                                    </div>
+                                    
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
 
@@ -799,12 +855,13 @@
 
 
         <div class="container">
-            <div class="insights-inner">
+            <div class="insights-inner" id="team">
+                <img class="insights-light" src="./assets/future-light.png" alt="">
 
                 <div class="swiper fade-in" id="insights-slider">
                     
                     <div class="insights__head-row fade-in">
-                        <h2 class="insights__head-header">Team<span></span></h2>
+                        <h2 class="insights__head-header">TEAM<span></span></h2>
                         
                         <div class="slider-buttons insights-slider-buttons fade-in">
                             <div class="button-slider-prev insights-button-prev">
@@ -821,46 +878,117 @@
                         <div class="swiper-slide insights__swiper-slide">
                             <div class="slide-image-wrap">
                                 <img src="./assets/man1.webp" alt="">
-                                <div class="insights__slide-btn" onclick="showPopup()">Read more</div>
+                                <!-- <div class="insights__slide-btn" onclick="showPopup()">Read more</div> -->
+                                 <div class="slide-text-wrap">
+                                    <p class="slide-name">Levan Korkashvili</p>
+                                    <p class="slide-country">Georgia</p>
+                                    <div class="slide-role"> 
+                                        <p>EMYO CEO</p> 
+                                        <p> СЕО of BVI Entity</p>
+                                        <p>CEO of Eclipse Casino</p>
+                                    </div>
+                                 </div>
                             </div>                            
-                            <p class="insights__slide-text">Levan Korkashvili<span></span></p>
+                            <!-- <p class="insights__slide-text">Levan Korkashvili<span></span></p> -->
                         </div>
 
                         <div class="swiper-slide insights__swiper-slide">
                             <div class="slide-image-wrap">
                                 <img src="./assets/man2.webp" alt="">
-                                <div class="insights__slide-btn" onclick="showPopup()">Read more</div>
+                                <div class="slide-text-wrap">
+                                    <p class="slide-name">Karimi Njigina</p>
+                                    <p class="slide-country">Kenya</p>
+                                    <p class="slide-role">Marketing & Community Lead / HEAD OF MARKETING AT MOYO CASINO</p>
+                                 </div>
+                                <!-- <div class="insights__slide-btn" onclick="showPopup()">Read more</div> -->
                             </div>
                             
-                            <p class="insights__slide-text">Karimi Njigina<span></span></p>
+                            <!-- <p class="insights__slide-text">Karimi Njigina<span></span></p> -->
                         </div>
 
                         <div class="swiper-slide insights__swiper-slide">
                             <div class="slide-image-wrap">
                                 <img src="./assets/man3.webp" alt="">
-                            <div class="insights__slide-btn" onclick="showPopup()">Read more</div>
+                                <div class="slide-text-wrap">
+                                    <p class="slide-name">Mikhail Prilepko</p>
+                                    <p class="slide-country">UAE</p>
+                                    <p class="slide-role">Token Sale Director Head of online casino chain</p>
+                                 </div>
+                            <!-- <div class="insights__slide-btn" onclick="showPopup()">Read more</div> -->
                             </div>
                             
-                            <p class="insights__slide-text">Mikhail Prilepko<span></span></p>
+                            <!-- <p class="insights__slide-text">Mikhail Prilepko<span></span></p> -->
+                        </div>
+
+                        <div class="swiper-slide insights__swiper-slide">
+                            <div class="slide-image-wrap">
+                                <img src="./assets/adviser2.webp" alt="">
+                                <div class="slide-text-wrap">
+                                    <p class="slide-name">Oleg Kim</p>
+                                    <p class="slide-country">UAE</p>
+                                    <p class="slide-role">Operations & Compliance Manager  Head of online operations</p>
+                                 </div>
+                            </div>                            
                         </div>
 
                         <div class="swiper-slide insights__swiper-slide">
                             <div class="slide-image-wrap">
                                 <img src="./assets/man4.webp" alt="">
-                            <div class="insights__slide-btn" onclick="showPopup()">Read more</div>
+                                <div class="slide-text-wrap">
+                                    <p class="slide-name">Andris Krute</p>
+                                    <p class="slide-country">Latvia</p>
+                                    <p class="slide-role">Tokenomics & Product Lead Head of slot department at Eclipse Casino</p>
+                                 </div>
+                            <!-- <div class="insights__slide-btn" onclick="showPopup()">Read more</div> -->
                             </div>
                             
-                            <p class="insights__slide-text">Andris Krute<span></span></p>
+                            <!-- <p class="insights__slide-text">Andris Krute<span></span></p> -->
                         </div>
+
+                        
+
+
 
                         <div class="swiper-slide insights__swiper-slide">
                             <div class="slide-image-wrap">
                                 <img src="./assets/man5.webp" alt="">
-                            <div class="insights__slide-btn" onclick="showPopup()">Read more</div>
+                                <div class="slide-text-wrap">
+                                    <p class="slide-name">Ryan Horn</p>
+                                    <p class="slide-country">UK</p>
+                                    <p class="slide-role">Strategic Partnerships Advisor (VC & Exchanges) Ex Binance Director, crypto expert</p>
+                                 </div>
+                            <!-- <div class="insights__slide-btn" onclick="showPopup()">Read more</div> -->
                             </div>
                             
-                            <p class="insights__slide-text">Ryan Horn<span></span></p>
+                            <!-- <p class="insights__slide-text">Ryan Horn<span></span></p> -->
                         </div>
+
+
+
+                        <div class="swiper-slide insights__swiper-slide">
+                            <div class="slide-image-wrap">
+                                <img src="./assets/adviser1.webp" alt="">
+                                <div class="slide-text-wrap">
+                                    <p class="slide-name">Adam Jones</p>
+                                    <p class="slide-country">USA</p>
+                                    <p class="slide-role">Global Marketing Strategy Advisor <br>Global marketing strategist with 15+ years of experience for leading US brands  </p>
+                                 </div>
+                            </div>                            
+                        </div>
+
+                        
+
+                        <div class="swiper-slide insights__swiper-slide">
+                            <div class="slide-image-wrap">
+                                <img src="./assets/adviser3.webp" alt="">
+                                <div class="slide-text-wrap">
+                                    <p class="slide-name">Igor Karavaev</p>
+                                    <p class="slide-country">UAE</p>
+                                    <p class="slide-role">ex-Skolkovo Foundation Executive Director, Fundraising Consultant</p>
+                                 </div>
+                            </div>                            
+                        </div>
+                        
 
                     </div>
 
@@ -870,8 +998,9 @@
         </div>
 
 
-        <!-- <div class="container">
+        <div class="container">
             <div class="questions-inner">
+                <img class="question-light" src="./assets/future-light.png" alt="">
                 <h2 class="questions-header fade-in">Everything You Need to Know </span></h2>
                 <div class="questions__accordion">
 
@@ -884,7 +1013,7 @@
                                 aria-details="faq-1"
                             >
                                 <p class="accordion__number">01</p>
-                                <p class="accordion__name">How to participate?</p>
+                                <p class="accordion__name">What is EMYO?</p>
                                 <div class="accordion-arrow"><div></div></div>
                             </div>
                             </summary>
@@ -896,7 +1025,7 @@
                             role="definition"
                         >
                             <div class="accordion__content-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis tristique leo. Phasellus sit amet metus suscipit, feugiat ex a, viverra nisl. Praesent pretium nisi neque, ac venenatis nibh placerat in. Pellentesque maximus nisl at semper varius. <span>Nullam dictum, velit vel convallis dignissim, ligula leo dapibus arcu, eget malesuada odio nisl id lectus. Nam sit amet dignissim neque. Integer dignissim ut urna at tincidunt. Suspendisse vitae mauris semper diam finibus finibus.</span></p>
+                            <p>EMYO provides the crypto community access to DeFi infrastructure based on a stable and fast-growing gambling sector, which remains unaffected by market crashes or crises. For casino players, it provides a chance to participate in a loyalty program and explore DeFi. EMYO is backed by a real operating, profit-generating business</p>
                             </div>
                         </div>
                     </div>
@@ -910,7 +1039,7 @@
                                 aria-details="faq-1"
                             >
                                 <p class="accordion__number">02</p>
-                                <p class="accordion__name">Is KYC required?</p>
+                                <p class="accordion__name">Who is the team behind the project?</p>
                                 <div class="accordion-arrow"><div></div></div>
                             </div>
                             </summary>
@@ -922,7 +1051,7 @@
                             role="definition"
                         >
                             <div class="accordion__content-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis tristique leo. Phasellus sit amet metus suscipit, feugiat ex a, viverra nisl. Praesent pretium nisi neque, ac venenatis nibh placerat in. Pellentesque maximus nisl at semper varius. <span>Nullam dictum, velit vel convallis dignissim, ligula leo dapibus arcu, eget malesuada odio nisl id lectus. Nam sit amet dignissim neque. Integer dignissim ut urna at tincidunt. Suspendisse vitae mauris semper diam finibus finibus.</span></p>
+                            <p>The EMYO team is experienced top management of a successful, profitable online/offline casino chain, along with a dedicated crypto team focused on DeFi and Web3. They specialize in building and scaling DeFi ecosystems and securing high‑impact partnerships, including deals with top‑10 sports and other powerful ambassadors</p>
                             </div>
                         </div>
                     </div>
@@ -936,7 +1065,7 @@
                                 aria-details="faq-1"
                             >
                                 <p class="accordion__number">03</p>
-                                <p class="accordion__name">What is EMYO’s total supply?</p>
+                                <p class="accordion__name">Is KYC required?</p>
                                 <div class="accordion-arrow"><div></div></div>
                             </div>
                             </summary>
@@ -948,7 +1077,7 @@
                             role="definition"
                         >
                             <div class="accordion__content-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis tristique leo. Phasellus sit amet metus suscipit, feugiat ex a, viverra nisl. Praesent pretium nisi neque, ac venenatis nibh placerat in. Pellentesque maximus nisl at semper varius. <span>Nullam dictum, velit vel convallis dignissim, ligula leo dapibus arcu, eget malesuada odio nisl id lectus. Nam sit amet dignissim neque. Integer dignissim ut urna at tincidunt. Suspendisse vitae mauris semper diam finibus finibus.</span></p>
+                            <p>KYC is required only at the token purchase stage. You do not need to complete KYC when applying for the waitlist, but you must pass KYC verification before buying EMYO tokens</p>
                             </div>
                         </div>
                     </div>
@@ -962,7 +1091,7 @@
                                 aria-details="faq-1"
                             >
                                 <p class="accordion__number">04</p>
-                                <p class="accordion__name">When will EMYO be listed?</p>
+                                <p class="accordion__name">When and how will I receive my tokens after the sale?</p>
                                 <div class="accordion-arrow"><div></div></div>
                             </div>
                             </summary>
@@ -974,7 +1103,7 @@
                             role="definition"
                         >
                             <div class="accordion__content-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis tristique leo. Phasellus sit amet metus suscipit, feugiat ex a, viverra nisl. Praesent pretium nisi neque, ac venenatis nibh placerat in. Pellentesque maximus nisl at semper varius. <span>Nullam dictum, velit vel convallis dignissim, ligula leo dapibus arcu, eget malesuada odio nisl id lectus. Nam sit amet dignissim neque. Integer dignissim ut urna at tincidunt. Suspendisse vitae mauris semper diam finibus finibus.</span></p>
+                            <p>EMYO tokens will be distributed to your wallet after the token sale ends, according to the vesting and unlock schedule specified in the Whitepaper. You will be able to claim your tokens using the same wallet you used to participate in the sale through the official EMYO platform</p>
                             </div>
                         </div>
                     </div>
@@ -988,7 +1117,7 @@
                                 aria-details="faq-5"
                             >
                                 <p class="accordion__number">05</p>
-                                <p class="accordion__name">What networks are supported?</p>
+                                <p class="accordion__name">How can I join the token sale?</p>
                                 <div class="accordion-arrow"><div></div></div>
                             </div>
                             </summary>
@@ -1000,15 +1129,15 @@
                             role="definition"
                         >
                             <div class="accordion__content-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis tristique leo. Phasellus sit amet metus suscipit, feugiat ex a, viverra nisl. Praesent pretium nisi neque, ac venenatis nibh placerat in. Pellentesque maximus nisl at semper varius. <span>Nullam dictum, velit vel convallis dignissim, ligula leo dapibus arcu, eget malesuada odio nisl id lectus. Nam sit amet dignissim neque. Integer dignissim ut urna at tincidunt. Suspendisse vitae mauris semper diam finibus finibus.</span></p>
+                            <p>To join the EMYO token sale, first apply for the waitlist and take part in our social media activities to secure guaranteed whitelist access and the best purchase conditions for EMYO coins. Once whitelisted, connect your wallet on the official sale page, deposit the accepted currency and confirm your EMYO token purchase</p>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="questions-button fade-in">View Full FAQ</div>
+                <div class="questions-button fade-in" onclick="showPopup()">VIEW FULL FAQ</div>
             </div>
-        </div> -->
+        </div>
 
         <div class="container">
             <div class="revolution-inner">
@@ -1036,14 +1165,25 @@
                         media="(max-width: 999px)"
                         />
                     </video>
+
+                    <div class="revolution-mobile-wrap">
+                        <div class="revolution__content-text fade-in">Be Part of the Web3 Gambling</div>
+                        <div class="button-read">READ WHITEPAPER</div>
+
+                    </div>
+
                 </div>
-                <!-- <img src="./assets/mask.webp" class="revolution-back-image" alt=""> -->
+                <img src="./assets/mask.webp" class="revolution-back-image" alt="">
 
                 <div class="revolution__content">
-                    <div class="revolution__content-text fade-in">Be Part of the Web3 Gaming Revolution</div>
+                    <div class="revolution__content-text pc fade-in">Be Part of the Web3 Gambling</div>
                     <h2 class="revolution__content-header fade-in">A Licensed Casino 3.0 Seamlessly Integrating Crypto and Gambling</h2>
                     <p class="revolution__content-decsr fade-in">Powered by the big global casino chain with active 160,000+ players offline and online</p>
-                    <div class="revolution__content-button fade-in" onclick="showPopup()">Participate in Token Sale</div>
+                    <div class="revolution__buttons-wrap">
+                        <div class="button-sale" onclick="showPopup()">PARTICIPATE IN TOKEN SALE</div>
+                        <div class="button-read pc">READ WHITEPAPER</div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -1055,6 +1195,7 @@
     <footer>
         <div class="container" id="footer">
             <div class="footer-inner fade-in">
+                <img class="footer-light" src="./assets/tokenomics-light.png" alt="">
                 <div class="footer__row">
 
                     <div class="footer__logo">
@@ -1063,26 +1204,29 @@
                     </div>
 
                     <div class="footer__links pc">
-                        <p class="footer__links-name">Products</p>
 
-                        <ul class="footer__links-list">
-                            <li><a href="">Tokenomics</a></li>
-                            <li><a href="">Utility</a></li>
-                            <li><a href="">Roadmap</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Forecast</a></li>
-                            <li><a href="">Docs</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
+                        <div class="footer__links-wrap">
+                            <p class="footer__links-name">Products</p>
+                            <ul class="footer__links-list">
+                                <li><a href="#tokenomics">Tokenomics</a></li>
+                                <li><a href="#utility">Utility</a></li>
+                                <li><a href="#roadmap">Roadmap</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Forecast</a></li>
+                                <li><a href="">Docs</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        
                         
                     </div>
 
                     <div class="footer__social">
                         <ul class="social__links">
-                            <li><a href=""><img src="./assets/icons/telegram.svg" alt=""></a></li>
-                            <li><a href=""><img src="./assets/icons/x.svg" alt=""></a></li>
-                            <li><a href=""><img src="./assets/icons/discord.svg" alt=""></a></li>
-                            <li><a href=""><img src="./assets/icons/social4.svg" alt=""></a></li>
+                            <li><a href="https://t.me/emyocoin"><img src="./assets/icons/telegram.svg" alt=""></a></li>
+                            <li><a href="https://x.com/Emyocoin"><img src="./assets/icons/x.svg" alt=""></a></li>
+                            <li><a href="https://www.linkedin.com/company/emyocoin/about/?viewAsMember=true"><img src="./assets/icons/in.svg" alt=""></a></li>
+                            <li><a href="https://medium.com/@emyocoin"><img src="./assets/icons/social4.svg" alt=""></a></li>
                         </ul>
                     </div>
 
@@ -1092,9 +1236,9 @@
                     <div class="links__list-wrap">
                         <p class="footer__links-name">Products</p>
                         <ul class="footer__links-list">
-                            <li><a href="">Tokenomics</a></li>
-                            <li><a href="">Utility</a></li>
-                            <li><a href="">Roadmap</a></li>
+                            <li><a href="#tokenomics">Tokenomics</a></li>
+                            <li><a href="#utility">Utility</a></li>
+                            <li><a href="#roadmap">Roadmap</a></li>
                         </ul>
                     </div>
 
@@ -1113,9 +1257,10 @@
                     <p class="footer-date">© 2025 EMYO Coin. All Rights Reserved</p>
                     <p class="footer-jurist">Participation may be restricted in certain jurisdictions</p>
                     <ul class="footer__policy-block">
-                        <li><a href="">Privacy</a></li>
-                        <li><a href="">Policy</a></li>
-                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="./assets/Terms_of_Use_EMYO.pdf">Terms of Use</a></li>
+                        <li><a href="./assets/Loyalty_Program_EMYO.pdf">Loyalty Program</a></li>
+                        <li><a href="./assets/Cookie_Policy_EMYO.pdf">Cookie Policy</a></li>
+                        <li><a href="./assets/Privacy_Policy_EMYO.pdf">Privacy Policy</a></li>
                     </ul>
                 </div>               
     
@@ -1130,7 +1275,7 @@
         <div id="popup">
             <div class="popup-wrap">
                 <div class="popoup__close" onclick="closePopup()"></div>
-                <h2 class="contact-form__head-popup fade-in">Submit a request for the White List</h2>
+                <h2 class="contact-form__head-popup fade-in">Apply for the Waitlist</h2>
                 
                 <form class="contact-form-popup" action="" method="get" enctype="multipart/form-data">
                     <div class="label-wrap-popup">
@@ -1155,10 +1300,10 @@
                         <div class="form__row-popup fade-in">                            
                             
                             <label class="form-describe">
-                                <input class="contact-form-input-popup form-area-descr" type="text" name="describe" placeholder="How did you hear about us?">
+                                <input class="contact-form-input-popup form-area-descr" type="text" name="describe" placeholder="Wallet address">
                             </label>
                                 
-                            <button class="button-request-form-popup" type="submit">Leave a request</button>
+                            <button class="button-request-form-popup" type="submit">Submit</button>
                             
                         </div>                      
                           

@@ -126,15 +126,16 @@ const insightsSlider = new Swiper('#insights-slider', {
       prevEl: '.insights-button-prev',
     },
 
-    slidesPerView: 1.3,
+    slidesPerView: 1,
     spaceBetween: 13,
     speed: 500,
 
     breakpoints: {
-        
+        768: {
+            slidesPerView: 2,
+        },
         1000: {
-          slidesPerView: 3.8,
-          spaceBetween: 13
+            slidesPerView: 5,
         },
     },  
   

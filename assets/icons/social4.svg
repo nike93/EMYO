@@ -1,12 +1,6 @@
-<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="35" height="35" rx="6" fill="url(#paint0_linear_4015_6)"/>
-<circle cx="12.5" cy="17.5" r="7.5" fill="#402F2F"/>
-<ellipse cx="24" cy="17.5" rx="3" ry="7.5" fill="#402F2F"/>
-<ellipse cx="29.5" cy="17.5" rx="1.5" ry="7.5" fill="#402F2F"/>
-<defs>
-<linearGradient id="paint0_linear_4015_6" x1="15.4808" y1="-20.1923" x2="79.1296" y2="-11.1489" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F2D09D"/>
-<stop offset="1" stop-color="#856A42"/>
-</linearGradient>
-</defs>
+<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="52" height="52" rx="3.5" stroke="#FFBB00" stroke-opacity="0.3"/>
+<ellipse cx="18.5" cy="27" rx="11.5" ry="11" fill="#FFBB00"/>
+<ellipse cx="35" cy="27" rx="4" ry="11" fill="#FFBB00"/>
+<ellipse cx="42.5" cy="27" rx="2.5" ry="11" fill="#FFBB00"/>
 </svg>
