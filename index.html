@@ -1279,39 +1279,42 @@
                 <div class="popoup__close" onclick="closePopup()"></div>
                 <h2 class="contact-form__head-popup fade-in">Apply for the Waitlist</h2>
                 
-                <form class="contact-form-popup" action="" method="get" enctype="multipart/form-data">
+                <form id="whiteListForm" class="contact-form-popup">
                     <div class="label-wrap-popup">
-
                         <div class="form__row-popup fade-in">
-                            <label class="form-name">
-                                <input class="contact-form-input-popup" type="text" name="name" placeholder="Full name">
-                            </label> 
-                            <label class="form-tg">
-                                <input class="contact-form-input-popup" type="text" name="name" placeholder="Telegram username">
-                            </label> 
-                            <label class="form-mail">
-                                <input class="contact-form-input-popup" type="email" name="email" placeholder="Email">
-                            </label>
-                            <label class="form-country">
-                                <input class="contact-form-input-popup" type="text" name="name" placeholder="Country">
-                            </label> 
-
-                            
-                        </div> 
-
-                        <div class="form__row-popup fade-in">                            
-                            
-                            <label class="form-describe">
-                                <input class="contact-form-input-popup form-area-descr" type="text" name="describe" placeholder="Wallet address">
-                            </label>
-                                
-                            <button class="button-request-form-popup" type="submit">Submit</button>
-                            
-                        </div>                      
-                          
-                    </div>                      
+                        <label class="form-name">
+                            <input class="contact-form-input-popup" type="text" name="fullName" placeholder="Full name" required>
+                        </label>
+                        <label class="form-tg">
+                            <input class="contact-form-input-popup" type="text" name="telegram" placeholder="Telegram username" required>
+                        </label>
+                        <label class="form-mail">
+                            <input class="contact-form-input-popup" type="email" name="email" placeholder="Email" required>
+                        </label>
+                        <label class="form-country">
+                            <input class="contact-form-input-popup" type="text" name="country" placeholder="Country" required>
+                        </label>
+                        </div>
+                        <div class="form__row-popup fade-in">
+                        <label class="form-describe">
+                            <input class="contact-form-input-popup form-area-descr" type="text" name="source" placeholder="Wallet address">
+                        </label>
+                        <button class="button-request-form-popup" type="submit">Submit</button>
+                        </div>
+                    </div>
                 </form>
                 
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-overlay-succses">
+        <div id="popup-succses">
+            <div class="popup-wrap-succses">
+
+                <p class="succses-header">Thank you <span>for your request</span></p>
+                <p class="succses-text">we will contact you shortly</p>
+                <a href="#" class="succses-return" onclick="closePopupSuccses(); return false;">Return to site</a>
             </div>
         </div>
     </div>

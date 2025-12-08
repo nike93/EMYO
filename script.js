@@ -216,3 +216,60 @@ function closePopup() {
 document.addEventListener('DOMContentLoaded', function() {
   setTimeout(showPopup, 7000);
 });
+
+
+
+//forms
+
+document.getElementById("whiteListForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const payload = {
+    fullName: formData.get("fullName"),
+    telegram: formData.get("telegram"),
+    email: formData.get("email"),
+    country: formData.get("country"),
+    source: formData.get("source") || "" // необязательное поле
+  };
+
+  try {
+    const response = await fetch("https://api.emyo.io/api/1.0/form/white-list", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!response.ok) {
+      throw new Error("Ошибка: " + response.status);
+    }
+
+    const result = await response.json();
+    // alert("Заявка успешно отправлена!");
+    showPopupSuccses();
+    // console.log(result);
+  } catch (error) {
+    alert("Не удалось отправить заявку: " + error.message);
+  }
+});
+
+
+const popupOverlaySuccses = document.getElementById("popup-overlay-succses");
+const popupSuccses = document.getElementById("popup-succses");
+
+function showPopupSuccses() {
+  popupOverlaySuccses.style.display = "block";
+  popupSuccses.style.display = "flex";
+
+  setTimeout(() => {
+        closePopupSuccses();  
+    }, 5000);
+    
+}
+
+function closePopupSuccses() {
+  popupOverlaySuccses.style.display = "none";
+  popupSuccses.style.display = "none";
+}
