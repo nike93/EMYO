@@ -5354,7 +5354,13 @@ label {
     flex: 1;
 }
 
-input {
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input, select {
     background: none;
     border: none;
     border-bottom: 1px solid #fff;
@@ -5369,18 +5375,24 @@ input {
     text-transform: uppercase;
 }
 
-input::placeholder {
+input::placeholder, select {
     color: #fff;
     opacity: 0.9;
 }
 
-input:focus {
+input:focus, select:focus {
     outline: none;
 }
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-inner-spin-button,
+select {
     -webkit-appearance: none;
+}
+
+label.form-country select option {
+  background-color: #1f1f1f;
+  color: #fff;
 }
 
 .contact-form-input-popup:-webkit-autofill {
@@ -5447,6 +5459,8 @@ input:-webkit-autofill {
 }
 
 
+
+
 @media screen and (max-width: 1440px) {
     .contact-form__head-popup {
         font-size: 40px;
@@ -5511,6 +5525,33 @@ input:-webkit-autofill {
     }
     
 }
+
+
+/* Стили для валидации */
+.contact-form-input-popup.invalid {
+    border-bottom-color: #ff6b6b !important;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 11px;
+    margin-top: 4px;
+    display: block;
+    min-height: 16px;
+    font-family: 'Unbounded';
+}
+
+label.has-error input,
+label.has-error select {
+  border-bottom: 2px solid red;
+}
+
+/* label .error {
+  font-size: 12px;
+  color: red;
+  margin-top: -5px;
+  display: block;
+} */
 
 
 
