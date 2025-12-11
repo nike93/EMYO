@@ -2436,6 +2436,7 @@ body {
     position: relative;
     height: 977px;
     max-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3874,6 +3875,7 @@ body {
     object-fit: cover; 
     height: 742px;
     max-height: 80vh;
+    min-height: 75vh;
 }
 
 .insights__slide-btn {
@@ -4504,6 +4506,7 @@ body {
     position: relative;
     height: 987px;
     max-height: 100vh;
+    min-height: 80vh;
     z-index: 4;
 }
 
@@ -5347,7 +5350,16 @@ body.menu-open {
     display: flex;
     justify-content: space-between;
     gap: 7%;
+    position: relative;
+}
+
+.form__row-popup:first-child {
+    z-index: 6;
+}
+
+.form__row-popup:last-child {
     align-items: flex-end;
+    z-index: 1;
 }
 
 label {
@@ -5421,6 +5433,8 @@ input:-webkit-autofill {
     border: none;
     text-transform: uppercase;
     font-family: 'Unbounded';
+    position: relative;
+    z-index: 1;
 }
 
 .popoup__close {
@@ -5509,7 +5523,7 @@ input:-webkit-autofill {
     }
 
     .label-wrap-popup label {
-        width: 97%;
+        width: 100%;
     }
 
     .contact-form-input-popup {
@@ -5552,6 +5566,179 @@ label.has-error select {
   margin-top: -5px;
   display: block;
 } */
+
+
+
+
+
+
+/* Стили для кастомного селекта */
+.custom-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.custom-select {
+    width: 100%;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    outline: none;
+}
+
+
+.custom-select:focus {
+    outline: none;
+}
+
+.custom-select.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.custom-select-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.custom-select-text.placeholder {
+    color: #fff;
+}
+
+.custom-select-arrow {
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+.custom-select.open .custom-select-arrow {
+    transform: rotate(180deg);
+}
+
+.custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow-y: auto;
+    background: transparent;
+    border: 1px solid transparent;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 9999;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+    width: 105%;
+}
+
+.custom-options::-webkit-scrollbar {
+    width: 2px;
+}
+
+.custom-options::-webkit-scrollbar-track {
+    background: #0f4a2b;
+}
+
+.custom-options::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 0px;
+}
+
+.custom-options.show {
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.custom-option {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #d1d1d1;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    /* border-bottom: 1px solid #f0f0f0; */
+}
+
+.custom-option:last-child {
+    border-bottom: none;
+}
+
+
+
+
+/* Для фоновой картинки в выпадающем меню */
+.custom-options {
+    background-image: url('./assets/country-back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    /* background-color: rgba(255, 255, 255, 0.95); */
+}
+
+.custom-option {
+    /* background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px); */
+}
+
+.custom-option:hover,
+.custom-option.selected,
+.custom-option.active {
+    /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.country-select-hidden {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+.form-country {
+    display: block;
+    width: 100%;
+}
+
+.form-country .error {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #dc3545;
+    min-height: 16px;
+}
+
+
+
+select.country-select-hidden {
+    display: none !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
 
 
 
@@ -5685,6 +5872,12 @@ label.has-error select {
         margin-left: auto;
         margin-right: auto;
     }
+
+
+    .custom-options {
+        top: -600%;
+        width: 100%;
+    }                                          
     
     
 }

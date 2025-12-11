@@ -1304,43 +1304,92 @@
                     </div>
                 </form> -->
 
+                <!-- <form id="whiteListForm" class="contact-form-popup">
+                    <div class="label-wrap-popup">
+                        <div class="form__row-popup fade-in">
+                            <label class="form-name">
+                                <input class="contact-form-input-popup" type="text" name="fullName" 
+                                    placeholder="Full name" required minlength="3">
+                                <span class="error"></span>
+                            </label>
+                            <label class="form-tg">
+                                <input class="contact-form-input-popup" type="text" name="telegram" 
+                                    placeholder="Telegram username">
+                                <span class="error"></span>
+                            </label>
+                            <label class="form-mail">
+                                <input class="contact-form-input-popup" type="email" name="email" 
+                                    placeholder="Email">
+                                <span class="error"></span>
+                            </label>
+
+                            <label class="form-country">
+                                <select class="contact-form-input-popup" name="country" required>
+                                    <option value="" disabled selected>COUNTRY</option>
+                                </select>
+                                <span class="error"></span>
+                            </label>
+
+                        </div>
+                        <div class="form__row-popup fade-in">
+                            <label class="form-describe">
+                                <input class="contact-form-input-popup form-area-descr" type="text" 
+                                    name="source" placeholder="Wallet address" required>
+                                <span class="error"></span>
+                            </label>
+                            <button class="button-request-form-popup" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form> -->
+
                 <form id="whiteListForm" class="contact-form-popup">
-    <div class="label-wrap-popup">
-        <div class="form__row-popup fade-in">
-            <label class="form-name">
-                <input class="contact-form-input-popup" type="text" name="fullName" 
-                       placeholder="Full name" required minlength="3">
-                <span class="error"></span>
-            </label>
-            <label class="form-tg">
-                <input class="contact-form-input-popup" type="text" name="telegram" 
-                       placeholder="Telegram username">
-                <span class="error"></span>
-            </label>
-            <label class="form-mail">
-                <input class="contact-form-input-popup" type="email" name="email" 
-                       placeholder="Email">
-                <span class="error"></span>
-            </label>
+                    <div class="label-wrap-popup">
+                        <div class="form__row-popup fade-in">
+                            <label class="form-name">
+                                <input class="contact-form-input-popup" type="text" name="fullName" 
+                                    placeholder="Full name" required minlength="3">
+                                <span class="error"></span>
+                            </label>
+                            <label class="form-tg">
+                                <input class="contact-form-input-popup" type="text" name="telegram" 
+                                    placeholder="Telegram username"
+                                    onfocus="if(this.value === '') this.value = '@'"
+                                    oninput="this.value = '@' + this.value.replace(/^@/, '').replace(/[^\w]/g, '')">
+                                <span class="error"></span>
+                            </label>
+                            <label class="form-mail">
+                                <input class="contact-form-input-popup" type="email" name="email" 
+                                    placeholder="Email">
+                                <span class="error"></span>
+                            </label>
 
-            <label class="form-country">
-                <select class="contact-form-input-popup" name="country" required>
-                    <option value="" disabled selected>COUNTRY</option>
-                </select>
-                <span class="error"></span>
-            </label>
-
-        </div>
-        <div class="form__row-popup fade-in">
-            <label class="form-describe">
-                <input class="contact-form-input-popup form-area-descr" type="text" 
-                       name="source" placeholder="Wallet address" required>
-                <span class="error"></span>
-            </label>
-            <button class="button-request-form-popup" type="submit">Submit</button>
-        </div>
-    </div>
-</form>
+                            <label class="form-country">
+                                <div class="custom-select-wrapper">
+                                    <div class="custom-select">
+                                        <span class="custom-select-text">COUNTRY</span>
+                                        <svg class="custom-select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="custom-options">
+                                    </div>
+                                    <select class="country-select-hidden" name="country" required>
+                                        <option value="" disabled selected>COUNTRY</option>
+                                    </select>
+                                </div>
+                                <span class="error"></span>
+                            </label>
+                        </div>
+                        <div class="form__row-popup fade-in">
+                            <label class="form-describe">
+                                <input class="contact-form-input-popup form-area-descr" type="text" 
+                                    name="source" placeholder="Wallet address" required>
+                                <span class="error"></span>
+                            </label>
+                            <button class="button-request-form-popup" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
                 
             </div>
         </div>
