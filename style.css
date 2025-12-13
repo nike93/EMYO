@@ -129,7 +129,17 @@ body {
     font-weight: 500;
     font-size: 14px;
     color: #fff;
+    transition: all 0.3s;
 }
+
+
+
+@media (hover: hover) {
+    .nav-menu li:hover {
+        opacity: 0.6;
+    }
+}
+
 
 .header-button-sale {
     margin-left: 40px;
@@ -144,7 +154,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
+
+@media (hover: hover) {
+    .header-button-sale:hover {
+        box-shadow: 0px 0 8px #fff;
+        color: #fff;
+    }
+}
+
+
 
 /* .header-button-contact {
     font-weight: 500;
@@ -170,8 +190,12 @@ body {
 
 .header-social__links img {
     width: 34px;
+    transition: all 0.3s;
 }
 
+.header-social__links img:hover {
+    box-shadow: 0px 0 8px #fff;
+}
 
 .header-inner{
     min-height: var(--fixed-vh);
@@ -261,7 +285,17 @@ body {
     font-size: 16px;
     color: #140f03;
     cursor: pointer;
+    transition: all 0.3s;
 }
+
+@media (hover: hover) {
+    .button-sale:hover {
+        box-shadow: 0px 0 8px #fff;
+        color: #fff;
+    }
+}
+
+
 
 .button-read {    
     border-radius: 6px;
@@ -277,6 +311,15 @@ body {
     font-size: 16px;
     color: #fff;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media (hover: hover) {
+
+    .button-read:hover {
+        box-shadow: 0px 0 8px #fb0;
+        color: #fb0;
+    }
 }
 
 
@@ -333,6 +376,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .timer__blocks-row {
@@ -487,8 +531,17 @@ body {
     align-items: center;
     margin-top: auto;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
+@media (hover: hover) {
+
+    .timer__block-button:hover {
+        box-shadow: 0px 0 8px #fb0;
+        color: #fb0;
+    }
+
+}
 
 
 @media screen and (max-width: 1919px) {
@@ -1060,6 +1113,16 @@ body {
     margin: 2% auto;
     background: linear-gradient(180deg, #fff 30.83%, #939393 90.7%);
     color: #000;
+    transition: all 0.3s;
+}
+
+@media (hover: hover) {
+
+    .token__content-details .button-sale:hover {
+        box-shadow: 0px 0 8px #fb0;
+        color: #fb0;
+    }
+
 }
 
 
@@ -2157,6 +2220,15 @@ body {
     font-size: 18px;
     color: #140f03;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media (hover: hover) {
+
+    .legend-button:hover {
+        box-shadow: 0px 0 8px #fb0;
+        color: #fb0;
+    }
 }
 
 
@@ -2935,6 +3007,15 @@ body {
     padding: 0 30px;
     gap: 10px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media (hover: hover) {
+
+    .roadmap__header-button:hover {
+        box-shadow: 0px 0 8px #fff;
+        color: #fff;
+    }
 }
 
 .roadmap__header-button span {
@@ -3143,8 +3224,16 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     margin-top: 40px;
+    transition: all 0.3s;
 }
 
+@media (hover: hover) {
+
+    .roadmap-button:hover {
+        box-shadow: 0px 0 8px #fb0;
+        color: #fb0;
+    }
+}
 
 @media screen and (max-width: 1919px) {
 
@@ -3496,7 +3585,7 @@ body {
 
 
 .roadmap-partner {
-    margin-top: 120px;
+    padding-top: 120px;
 }
 
 .partner__head {
@@ -3535,6 +3624,16 @@ body {
     padding: 0 30px 0 40px;
     gap: 20px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+@media (hover: hover) { 
+
+    .partner-button:hover {
+        box-shadow: 0px 0 8px #fff;
+        color: #fff;
+    }
+
 }
 
 .partner-button p {
@@ -3591,7 +3690,7 @@ body {
 @media screen and (max-width: 1919px) {
 
     .roadmap-partner {
-        margin-top: 50px;
+        padding-top: 90px;
     }
 
     .partner__head-header {
@@ -3625,7 +3724,7 @@ body {
 @media screen and (max-width: 1439px) {
 
     .roadmap-partner {
-        margin-top: 10px;
+        padding-top: 10px;
     }
 
     .partner__head-header {
@@ -4322,8 +4421,16 @@ body {
     margin-left: auto;
     cursor: pointer;
     font-weight: 600;
+    transition: all 0.3s;
 }
 
+@media (hover: hover) {
+
+    .questions-button:hover {
+        box-shadow: 0px 0 8px #fb0;
+        color: #fb0;
+    }
+}
 
 @media screen and (max-width: 1919px) {
     .questions-header {
@@ -4586,7 +4693,16 @@ body {
 
 .revolution__buttons-wrap .button-sale {
     background: linear-gradient(180deg, #fff 30.83%, #939393 90.7%);
+    transition: all 0.3s;
 }
+
+@media (hover: hover) {
+
+    .revolution__buttons-wrap .button-sale:hover {
+        box-shadow: 0px 0 8px #fb0;
+        color: #fb0;
+    } 
+} 
 
 /* .revolution__content-button {
     border-radius: 15px;
@@ -4800,6 +4916,17 @@ body {
     text-transform: uppercase;
 }
 
+.footer__links-list li {
+    transition: all 0.3s;
+}
+
+@media (hover: hover) {
+
+    .footer__links-list li:hover {
+        opacity: 0.6;
+    }
+}
+
 .footer__social {
     display: flex;
 }
@@ -4812,6 +4939,14 @@ body {
 
 .social__links img {
     width: 53px;
+    transition: all 0.3s;
+}
+
+@media (hover: hover) {
+
+    .social__links img:hover {
+        box-shadow: 0px 0 8px #fff;
+    }
 }
 
 .footer-date {
@@ -4832,6 +4967,13 @@ body {
     gap: 30px;
     font-size: 16px;
     color: #fff;
+    transition: all 0.3s;
+}
+
+@media (hover: hover) {
+    .footer__policy-block li:hover {
+        opacity: 0.6;
+    }
 }
 
 .footer__row-mobile {
@@ -5126,9 +5268,9 @@ body {
     transition: color 0.3s;
 }
 
-.menu a:hover {
+/* .menu a:hover {
     color: #ccc;
-}
+} */
 
 .close-btn {
     position: absolute;
@@ -5435,6 +5577,15 @@ input:-webkit-autofill {
     font-family: 'Unbounded';
     position: relative;
     z-index: 1;
+    transition: all 0.3s;
+}
+
+@media (hover: hover) {
+
+    .button-request-form-popup:hover {
+        box-shadow: 0px 0 8px #fff;
+        color: #fff;
+    }
 }
 
 .popoup__close {

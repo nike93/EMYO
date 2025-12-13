@@ -737,16 +737,17 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
 
         if (!validateForm()) {
-            console.log('Валидация не пройдена - показаны все ошибки');
+            // console.log('Валидация не пройдена - показаны все ошибки');
             return;
         }
 
-        console.log('Валидация пройдена, отправка формы...');
+        // 
+        ('Валидация пройдена, отправка формы...');
 
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
         
-        console.log('Данные для отправки:', data);
+        // console.log('Данные для отправки:', data);
 
         const button = e.target.querySelector('button[type="submit"]');
         const originalText = button.textContent;
@@ -766,7 +767,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const result = await response.json();
-            console.log('Ответ сервера:', result);
+            // console.log('Ответ сервера:', result);
 
             // Сброс формы
             e.target.reset();
@@ -810,7 +811,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         customOptions.style.zIndex = '10000';
         
-        console.log('Form with custom select and validation initialized');
+        // console.log('Form with custom select and validation initialized');
     }
 
     initializeForm();
@@ -839,7 +840,34 @@ function closePopupSuccses() {
 }
 
 
+// timer
+
+// Конечная дата: 15 января 2026 года 00:00:00
+  const targetDate = new Date('2026-01-15T00:00:00').getTime();
+
+  function updateTimer() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    // Если время вышло
+    if (distance < 0) {
+      document.querySelectorAll('.timer__block-number').forEach(el => el.textContent = '00');
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+   
+    document.querySelectorAll('.timer__block-number')[0].textContent = String(days).padStart(2, '0');
+    document.querySelectorAll('.timer__block-number')[1].textContent = String(hours).padStart(2, '0');
+    document.querySelectorAll('.timer__block-number')[2].textContent = String(minutes).padStart(2, '0');
+    document.querySelectorAll('.timer__block-number')[3].textContent = String(seconds).padStart(2, '0');
+  }
 
 
-
+  updateTimer();
+  setInterval(updateTimer, 1000);
 
