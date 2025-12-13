@@ -842,8 +842,8 @@ function closePopupSuccses() {
 
 // timer
 
-// Конечная дата: 15 января 2026 года 00:00:00
-  const targetDate = new Date('2026-01-15T00:00:00').getTime();
+// Конечная дата: 15 января 2026 года 14:00:00 utc+4
+  const targetDate = new Date('2026-01-15T14:00:00+04:00').getTime();
 
   function updateTimer() {
     const now = new Date().getTime();
