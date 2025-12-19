@@ -106,7 +106,28 @@
         <div class="container">
             <div class="header-inner">
                 <div class="head-back-wrap">
-                    <img class="header-back" src="./assets/head-back.webp" alt="">
+                    <!-- <img class="header-back" src="./assets/head-back.webp" alt=""> -->
+                     <video
+                        class="header-back" 
+                        muted=""
+                        autoplay=""
+                        loop=""
+                        playsinline=""
+                        preload="none"
+                    >
+                        <!-- pc -->
+                        <source
+                        src="./assets/head.mp4"
+                        type="video/mp4"
+                        media="(min-width: 1000px)"
+                        />
+                        <!-- mobile -->
+                        <source
+                        src="./assets/head.mp4"
+                        type="video/mp4"
+                        media="(max-width: 999px)"
+                        />
+                    </video>
                 </div>
                 
                 <div class="header__content">
@@ -1394,11 +1415,11 @@
                             </label>
                         </div>
                         <div class="form__row-popup fade-in">
-                            <label class="form-describe">
+                            <!-- <label class="form-describe">
                                 <input class="contact-form-input-popup form-area-descr" type="text" 
                                     name="source" placeholder="Wallet address" required>
                                 <span class="error"></span>
-                            </label>
+                            </label> -->
                             <button class="button-request-form-popup" type="submit">Submit</button>
                         </div>
                     </div>

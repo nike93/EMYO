@@ -5578,6 +5578,8 @@ input:-webkit-autofill {
     position: relative;
     z-index: 1;
     transition: all 0.3s;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (hover: hover) {

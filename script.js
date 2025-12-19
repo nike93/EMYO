@@ -604,8 +604,11 @@ document.addEventListener('DOMContentLoaded', function() {
             return null;
         },
         telegram: v => {
-            if (!v || v.trim() === '') return 'Telegram is required';
-            if (!v.startsWith('@')) return 'Telegram must start with @';
+            // Поле telegram теперь необязательное
+            // Проверяем только если пользователь что-то ввел
+            if (v && v.trim() !== '') {
+                if (!v.startsWith('@')) return 'Telegram must start with @';
+            }
             return null;
         },
         email: v => {
@@ -616,12 +619,8 @@ document.addEventListener('DOMContentLoaded', function() {
         country: v => {
             if (!v || v === '') return 'Country is required';
             return null;
-        },
-        source: v => {
-            if (!v || v.trim() === '') return 'Wallet address is required';
-            if (!/^0x[a-fA-F0-9]{40}$/.test(v.trim())) return 'Invalid wallet address';
-            return null;
         }
+        // Убрана валидация для source (wallet address)
     };
 
     // Показ ошибок
@@ -658,7 +657,8 @@ document.addEventListener('DOMContentLoaded', function() {
         let isValid = true;
         let firstErrorElement = null;
 
-        ['fullName', 'telegram', 'email', 'country', 'source'].forEach(name => {
+        // Убрано 'source' из списка полей для валидации
+        ['fullName', 'telegram', 'email', 'country'].forEach(name => {
             const input = form.querySelector(`[name="${name}"]`);
             if (!input) return;
             
@@ -732,22 +732,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 10);
     });
 
-    // 6. ОТПРАВКА ФОРМЫ 
+        // 6. ОТПРАВКА ФОРМЫ 
     document.getElementById('whiteListForm').addEventListener('submit', async (e) => {
         e.preventDefault();
 
         if (!validateForm()) {
-            // console.log('Валидация не пройдена - показаны все ошибки');
             return;
         }
-
-        // 
-        ('Валидация пройдена, отправка формы...');
 
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
         
-        // console.log('Данные для отправки:', data);
+        // Получаем элемент ввода telegram
+        const telegramInput = form.querySelector('input[name="telegram"]');
+        let telegramValue = data.telegram;
+        
+        // Если поле telegram пустое или содержит только @, добавляем минимальное значение
+        if (!telegramValue || telegramValue.trim() === '' || telegramValue === '@') {
+            telegramValue = '@'; // Минимальное валидное значение
+        }
+        
+        // Обновляем значение в данных для отправки
+        data.telegram = telegramValue;
+        
+        console.log('Данные для отправки:', data);
 
         const button = e.target.querySelector('button[type="submit"]');
         const originalText = button.textContent;
@@ -767,7 +775,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const result = await response.json();
-            // console.log('Ответ сервера:', result);
+            console.log('Ответ сервера:', result);
 
             // Сброс формы
             e.target.reset();
